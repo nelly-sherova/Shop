@@ -1,15 +1,15 @@
-﻿namespace Shop.Models
+﻿using Microsoft.EntityFrameworkCore.Query;
+
+namespace Shop.Models
 {
-    public class ProductVariations
+    public class ProductVariation
     {
         /// <summary>
         /// Уникальный идентификатор 
         /// </summary>
         public int Id { get; set; }
-        /// <summary>
-        /// Идентификатор товара
-        /// </summary>
-        public int ProductId { get; set; }
+     
+       
         /// <summary>
         /// Цвет товара 
         /// </summary>
@@ -54,6 +54,18 @@
         /// Тип застежки (пуговицы, молния, липучка, шнуровка)
         /// </summary>
         public string Clasp { get; set; }
+        /// <summary>
+        /// Идентификатор товара
+        /// </summary>
+        public int ProductId { get; set; }
+        /// <summary>
+        /// Продукт 
+        /// </summary>
+        public Product Product { get; set; }
+        /// <summary>
+        /// Картинки
+        /// </summary>
+        public ICollection<PicUrl> PicUrls { get; set; }
 
 
     }

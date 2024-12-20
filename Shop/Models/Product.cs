@@ -51,7 +51,7 @@ namespace Shop.Models
         /// <summary>
         /// Сезонность 
         /// </summary>
-        public List<Season> Seasons { get; set; }
+        public ICollection<Season> Season { get; set; }
         /// <summary>
         /// Состав ткани 
         /// </summary>
@@ -60,6 +60,7 @@ namespace Shop.Models
         /// Бренд, Фирма или марка одежды 
         /// </summary>
         public string Brand { get; set; }
+        public ICollection<ProductVariation> ProductVariation { get; set; } 
 
 
 

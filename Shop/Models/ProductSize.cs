@@ -15,7 +15,7 @@ namespace Shop.Models
         /// <summary>
         /// Список вариаций этого цвета 
         /// </summary>
-        public ICollection<ProductVariations> Variations { get; set; }
+        public ICollection<ProductVariation> Variations { get; set; }
         
         
     }

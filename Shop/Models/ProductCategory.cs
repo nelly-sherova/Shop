@@ -10,5 +10,13 @@
         /// Идентификатор категории 
         /// </summary>
         public int CategoryId { get; set; }
+        /// <summary>
+        /// Продукт
+        /// </summary>
+        public Product Product { get; set; }
+        /// <summary>
+        /// Категория
+        /// </summary>
+        public Category Category { get; set; }
     }
 }
